@@ -12,7 +12,7 @@
 <meta property="og:type" content="restaurant.restaurant">
 <meta property="og:title" content="Tapería El Monte — Bar de Tapas en Cártama (Málaga)">
 <meta property="og:description" content="Ponte cómodo. Buenas tapas y mejor ambiente, en El Monte. 5,0★ en Google (40 opiniones). Calle Viento, 23, Cártama.">
-<meta property="og:image" content="img/og-taperia-el-monte.jpg">
+<meta property="og:image" content="img/hero-bocadillo-bacon-queso.jpg">
 <meta property="og:locale" content="es_ES">
 <meta property="og:url" content="https://tuweb.example/">
 <meta name="twitter:card" content="summary_large_image">
@@ -22,7 +22,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Caveat:wght@600;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -31,7 +31,7 @@
   "@context": "https://schema.org",
   "@type": "BarOrPub",
   "name": "Tapería El Monte",
-  "image": "img/og-taperia-el-monte.jpg",
+  "image": "img/hero-bocadillo-bacon-queso.jpg",
   "@id": "https://tuweb.example/",
   "url": "https://tuweb.example/",
   "telephone": "+34616570087",
@@ -68,159 +68,156 @@
 </head>
 <body>
 
-<!-- ============ HEADER ============ -->
-<header class="site-header">
-  <div class="container">
-    <a href="#inicio" class="brand">
-      <svg class="brand-mark" viewBox="0 0 200 200" fill="currentColor" role="img" aria-label="Tapería El Monte"><path d="M100 18c2.8 0 5 2.3 5 5v6.6c8.1 1.9 14 9.2 14 17.8v3.4h4a4 4 0 0 1 4 4v6a4 4 0 0 1-4 4h-1.4L142 96h10a4 4 0 0 1 4 4v6a4 4 0 0 1-4 4h-3v56a6 6 0 0 1-6 6H57a6 6 0 0 1-6-6v-56h-3a4 4 0 0 1-4-4v-6a4 4 0 0 1 4-4h10l20.4-32.2H77a4 4 0 0 1-4-4v-6a4 4 0 0 1 4-4h4v-3.4c0-8.6 5.9-15.9 14-17.8V23c0-2.7 2.2-5 5-5Z"/></svg>
-      <span class="brand-name">El Monte</span>
-    </a>
-    <nav class="nav-links">
-      <a href="#cocina">Nuestra cocina</a>
-      <a href="#carta">La carta</a>
-      <a href="#ambiente">El ambiente</a>
-      <a href="#opiniones">Opiniones</a>
-      <a href="#ubicacion">Cómo llegar</a>
-    </nav>
-    <div class="nav-actions">
-      <a href="tel:+34616570087" class="btn btn-outline btn-outline-cta">616 57 00 87</a>
-      <a href="https://wa.me/34616570087?text=Hola%2C%20quiero%20reservar%20mesa%20en%20Tapería%20El%20Monte" target="_blank" rel="noopener" class="btn btn-primary">Reservar</a>
-    </div>
-    <button class="nav-toggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
-  </div>
-  <div class="mobile-menu">
-    <a href="#cocina">Nuestra cocina</a>
-    <a href="#carta">La carta</a>
-    <a href="#ambiente">El ambiente</a>
-    <a href="#opiniones">Opiniones</a>
-    <a href="#ubicacion">Cómo llegar</a>
-    <a href="https://wa.me/34616570087?text=Hola%2C%20quiero%20reservar%20mesa%20en%20Tapería%20El%20Monte" target="_blank" rel="noopener" class="btn btn-primary">Reservar por WhatsApp</a>
+<!-- ============ TOPBAR ============ -->
+<header class="topbar">
+  <a href="#inicio" class="topbar-brand">
+    <span class="stamp">
+      <svg viewBox="0 0 200 200" fill="currentColor"><path d="M100 18c2.8 0 5 2.3 5 5v6.6c8.1 1.9 14 9.2 14 17.8v3.4h4a4 4 0 0 1 4 4v6a4 4 0 0 1-4 4h-1.4L142 96h10a4 4 0 0 1 4 4v6a4 4 0 0 1-4 4h-3v56a6 6 0 0 1-6 6H57a6 6 0 0 1-6-6v-56h-3a4 4 0 0 1-4-4v-6a4 4 0 0 1 4-4h10l20.4-32.2H77a4 4 0 0 1-4-4v-6a4 4 0 0 1 4-4h4v-3.4c0-8.6 5.9-15.9 14-17.8V23c0-2.7 2.2-5 5-5Z"/></svg>
+    </span>
+    <span class="topbar-word">El Monte</span>
+  </a>
+  <div class="topbar-actions">
+    <span class="phone-mini">616 57 00 87</span>
+    <button class="menu-btn"><span class="bars"><span></span><span></span><span></span></span> Menú</button>
   </div>
 </header>
 
+<!-- ============ NAV OVERLAY ============ -->
+<div class="nav-overlay">
+  <svg class="nav-overlay-watermark" viewBox="0 0 200 200" fill="currentColor"><path d="M100 18c2.8 0 5 2.3 5 5v6.6c8.1 1.9 14 9.2 14 17.8v3.4h4a4 4 0 0 1 4 4v6a4 4 0 0 1-4 4h-1.4L142 96h10a4 4 0 0 1 4 4v6a4 4 0 0 1-4 4h-3v56a6 6 0 0 1-6 6H57a6 6 0 0 1-6-6v-56h-3a4 4 0 0 1-4-4v-6a4 4 0 0 1 4-4h10l20.4-32.2H77a4 4 0 0 1-4-4v-6a4 4 0 0 1 4-4h4v-3.4c0-8.6 5.9-15.9 14-17.8V23c0-2.7 2.2-5 5-5Z"/></svg>
+  <div class="nav-overlay-top">
+    <span class="topbar-word">El Monte</span>
+    <button class="nav-close" aria-label="Cerrar menú">✕</button>
+  </div>
+  <nav class="nav-overlay-links">
+    <a href="#casa"><span class="i">01</span> La casa</a>
+    <a href="#carta"><span class="i">02</span> La pizarra</a>
+    <a href="#especialidades"><span class="i">03</span> Especialidades</a>
+    <a href="#ambiente"><span class="i">04</span> El ambiente</a>
+    <a href="#opiniones"><span class="i">05</span> Opiniones</a>
+    <a href="#reservas"><span class="i">06</span> Reservas</a>
+    <a href="#ubicacion"><span class="i">07</span> Cómo llegar</a>
+  </nav>
+  <div class="nav-overlay-cta">
+    <a href="https://wa.me/34616570087?text=Hola%2C%20quiero%20reservar%20mesa%20en%20Tapería%20El%20Monte" target="_blank" rel="noopener" class="btn btn-gold">Reservar por WhatsApp</a>
+    <a href="tel:+34616570087" class="btn btn-line">616 57 00 87</a>
+  </div>
+</div>
+
 <!-- ============ HERO ============ -->
 <section class="hero" id="inicio">
-  <div class="hero-media">
-    <div class="ph" style="position:absolute;inset:0;border-radius:0;">
-      <div class="ph-inner">
-        <span class="ph-icon">📷</span>
-        <span class="ph-label">FOTO PENDIENTE: fachada o interior acogedor de El Monte, luz cálida</span>
-        <span class="ph-hint">Tamaño recomendado 1920×1080px, formato horizontal</span>
-      </div>
-    </div>
-  </div>
-  <div class="container hero-content">
-    <div class="hero-badge"><span class="stars">★★★★★</span> 5,0 en Google · 40 opiniones</div>
-    <h1>Ven a tapear,<br><em>ponte cómodo.</em></h1>
-    <p class="hero-sub">Bar de tapas de toda la vida en Cártama. Buen producto, trato cercano y el ambiente de siempre, para sentirte como en casa.</p>
+  <div class="hero-text">
+    <span class="hero-eyebrow">Bar de tapas · Cártama</span>
+    <h1>Ponte cómodo,<br><em>esto es El Monte.</em></h1>
+    <p class="hero-sub">Tapas de toda la vida, trato cercano y el ambiente que hace que te quedes a la segunda ronda.</p>
     <div class="hero-cta">
-      <a href="https://wa.me/34616570087?text=Hola%2C%20quiero%20reservar%20mesa%20en%20Tapería%20El%20Monte" target="_blank" rel="noopener" class="btn btn-primary">Reservar por WhatsApp</a>
-      <a href="#carta" class="btn btn-outline">Ver la carta</a>
+      <a href="https://wa.me/34616570087?text=Hola%2C%20quiero%20reservar%20mesa%20en%20Tapería%20El%20Monte" target="_blank" rel="noopener" class="btn btn-gold">Reservar mesa</a>
+      <a href="#carta" class="btn btn-line">Ver la pizarra</a>
+    </div>
+    <div class="hero-stamp-row">
+      <div class="hero-stamp"><strong>5,0</strong><span>★★★★★</span></div>
+      <p class="hero-stamp-text"><strong>40 opiniones</strong> en Google. El bar de siempre en Cártama.</p>
     </div>
   </div>
-  <div class="hero-scroll"><span>Descubre</span><span class="line"></span></div>
+  <div class="hero-media">
+    <div class="ph has-photo">
+      <img src="img/hero-bocadillo-bacon-queso.jpg" alt="Bocadillo de bacon y queso de Tapería El Monte" loading="eager">
+    </div>
+  </div>
 </section>
 
-<!-- ============ NUESTRA COCINA ============ -->
-<section id="cocina">
+<!-- ============ 01 · LA CASA ============ -->
+<section id="casa" class="casa">
+  <span class="casa-num-bg">01</span>
   <div class="container">
-    <div class="split">
-      <div class="split-text reveal">
-        <svg class="ermita-mini" viewBox="0 0 200 200" fill="currentColor"><path d="M100 18c2.8 0 5 2.3 5 5v6.6c8.1 1.9 14 9.2 14 17.8v3.4h4a4 4 0 0 1 4 4v6a4 4 0 0 1-4 4h-1.4L142 96h10a4 4 0 0 1 4 4v6a4 4 0 0 1-4 4h-3v56a6 6 0 0 1-6 6H57a6 6 0 0 1-6-6v-56h-3a4 4 0 0 1-4-4v-6a4 4 0 0 1 4-4h10l20.4-32.2H77a4 4 0 0 1-4-4v-6a4 4 0 0 1 4-4h4v-3.4c0-8.6 5.9-15.9 14-17.8V23c0-2.7 2.2-5 5-5Z"/></svg>
-        <span class="eyebrow">Nuestra cocina</span>
-        <h2>Recetas de siempre, hechas con cariño</h2>
-        <p>En El Monte cocinamos como en casa: producto fresco del día, recetas de toda la vida y ese punto casero que no se puede fingir. Cada tapa sale de la cocina pensada para compartir, para repetir y para que te sepa a gloria.</p>
-        <p>No buscamos sorprenderte con complicaciones, sino que te sientes a la mesa, pruebes lo de siempre y te vayas pensando en la próxima vez que vuelvas. Eso es lo que llevamos años haciendo, y por eso repites.</p>
+    <div class="casa-grid">
+      <div class="casa-text reveal">
+        <span class="num-tag">01 — La casa</span>
+        <h2 class="sec-title">Recetas de siempre, hechas con cariño</h2>
+        <p>En El Monte cocinamos como en casa: producto fresco del día, recetas de toda la vida y ese punto casero que no se puede fingir. Cada tapa sale pensada para compartir, para repetir y para que te sepa a gloria.</p>
+        <p>No buscamos sorprenderte con complicaciones, sino que te sientes, pruebes lo de siempre y te vayas pensando en la próxima vez que vuelvas. Eso es lo que llevamos años haciendo, y por eso se repite.</p>
       </div>
-      <div class="split-media reveal">
-        <div class="ph">
-          <div class="ph-inner">
-            <span class="ph-icon">📷</span>
-            <span class="ph-label">FOTO PENDIENTE: interior acogedor del bar (barra o comedor)</span>
-            <span class="ph-hint">Vertical, 1000×1250px aprox.</span>
+      <div class="casa-media reveal">
+        <div class="ph has-photo"><img src="img/mesa-tapas-variadas.jpg" alt="Mesa con tapas variadas en Tapería El Monte" loading="lazy"></div>
+        <div class="casa-media-tag">de toda la vida</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 · LA PIZARRA (CARTA) ============ -->
+<section id="carta">
+  <div class="container">
+    <div class="reveal" style="text-align:center; margin-bottom:46px;">
+      <span class="num-tag">02 — La pizarra</span>
+      <h2 class="sec-title" style="margin:0 auto;">Lo que hoy toca en El Monte</h2>
+      <p class="sec-lead" style="margin:12px auto 0;">Precios orientativos — pregunta en barra por lo del día.</p>
+    </div>
+
+    <div class="pizarra-wrap reveal">
+      <div class="board-layout">
+        <div class="board-tabs">
+          <button class="board-tab active" data-target="b-tapas">Tapas Clásicas</button>
+          <button class="board-tab" data-target="b-montaditos">Montaditos</button>
+          <button class="board-tab" data-target="b-platos">Platos</button>
+          <button class="board-tab" data-target="b-tostas">Tostas</button>
+          <button class="board-tab" data-target="b-burguers">Mini Burguers</button>
+          <button class="board-tab" data-target="b-postres">Postres</button>
+        </div>
+
+        <div>
+          <div class="board-panel active" id="b-tapas">
+            <div class="board-item"><div><div class="board-item-name">Ensaladilla Rusa</div><span class="board-item-desc">Patata, zanahoria, huevo, atún y mayonesa casera</span></div><div class="board-item-leader"></div><div class="board-item-price">2,00€</div></div>
+            <div class="board-item"><div><div class="board-item-name">Patatas Bravas</div><span class="board-item-desc">Dados de patata frita con salsa brava y alioli</span></div><div class="board-item-leader"></div><div class="board-item-price">2,50€</div></div>
+            <div class="board-item"><div><div class="board-item-name">Magro con Tomate</div><span class="board-item-desc">Carne de cerdo en tomate casero especiado</span></div><div class="board-item-leader"></div><div class="board-item-price">2,50€</div></div>
+            <div class="board-item"><div><div class="board-item-name">Croquetas Caseras</div><span class="board-item-desc">Crujientes por fuera y cremosas por dentro</span></div><div class="board-item-leader"></div><div class="board-item-price">2,50€</div></div>
+            <div class="board-item"><div><div class="board-item-name">Pincho de Gambas</div><span class="board-item-desc">Gamba fresca cocida</span></div><div class="board-item-leader"></div><div class="board-item-price">2,50€</div></div>
+            <div class="board-item"><div><div class="board-item-name">Twister de Langostinos</div><span class="board-item-desc">Con salsa agridulce, toque asiático</span></div><div class="board-item-leader"></div><div class="board-item-price">2,50€</div></div>
+            <div class="board-item"><div><div class="board-item-name">Buñuelo Bacalao</div><span class="board-item-desc">Bacalao fresco y jugoso con capa crujiente</span></div><div class="board-item-leader"></div><div class="board-item-price">2,50€</div></div>
+          </div>
+
+          <div class="board-panel" id="b-montaditos">
+            <div class="board-item"><div><div class="board-item-name">El Serranito</div><span class="board-item-desc">Cerdo, jamón serrano, pimiento frito y mayonesa</span></div><div class="board-item-leader"></div><div class="board-item-price">2,70€</div></div>
+            <div class="board-item"><div><div class="board-item-name">El Pulled Pork</div><span class="board-item-desc">Pulled pork meloso con salsa suave</span></div><div class="board-item-leader"></div><div class="board-item-price">2,70€</div></div>
+            <div class="board-item"><div><div class="board-item-name">El Secreto</div><span class="board-item-desc">Secreto ibérico, reducción de PX y sal escamada</span></div><div class="board-item-leader"></div><div class="board-item-price">2,70€</div></div>
+            <div class="board-item"><div><div class="board-item-name">El Monte</div><span class="board-item-desc">Lomo a la plancha, queso fundido y mayonesa</span></div><div class="board-item-leader"></div><div class="board-item-price">2,70€</div></div>
+            <div class="board-item"><div><div class="board-item-name">El Sendero</div><span class="board-item-desc">Pollo aliñado con salsa cheddar y mayonesa</span></div><div class="board-item-leader"></div><div class="board-item-price">2,70€</div></div>
+          </div>
+
+          <div class="board-panel" id="b-platos">
+            <div class="board-item"><div><div class="board-item-name">Flamenquín</div><span class="board-item-desc">Relleno tradicional, dorado y crujiente</span></div><div class="board-item-leader"></div><div class="board-item-price">7,00€</div></div>
+            <div class="board-item"><div><div class="board-item-name">Secreto a la Plancha</div><span class="board-item-desc">Carne jugosa marcada al punto</span></div><div class="board-item-leader"></div><div class="board-item-price">7,00€</div></div>
+          </div>
+
+          <div class="board-panel" id="b-tostas">
+            <div class="board-item"><div><div class="board-item-name">Tosta El Monte</div><span class="board-item-desc">Secreto, cebolla caramelizada y reducción de PX</span></div><div class="board-item-leader"></div><div class="board-item-price">7,00€</div></div>
+            <div class="board-item"><div><div class="board-item-name">Tosta Campera</div><span class="board-item-desc">Lomo, pimiento, queso y alioli</span></div><div class="board-item-leader"></div><div class="board-item-price">6,00€</div></div>
+          </div>
+
+          <div class="board-panel" id="b-burguers">
+            <div class="board-item"><div><div class="board-item-name">La Ermita</div><span class="board-item-desc">Carne, rúcula fresca y mayonesa de trufa</span></div><div class="board-item-leader"></div><div class="board-item-price">2,70€</div></div>
+            <div class="board-item"><div><div class="board-item-name">The G.O.A.T.</div><span class="board-item-desc">Carne, queso de cabra y cebolla caramelizada</span></div><div class="board-item-leader"></div><div class="board-item-price">2,70€</div></div>
+            <div class="board-item"><div><div class="board-item-name">La Crujiente del Monte</div><span class="board-item-desc">Pollo crispy, cheddar, lechuga y mayonesa</span></div><div class="board-item-leader"></div><div class="board-item-price">2,70€</div></div>
+            <div class="board-item"><div><div class="board-item-name">El Monte</div><span class="board-item-desc">Carne, bacon y cheddar con salsa burguer</span></div><div class="board-item-leader"></div><div class="board-item-price">2,70€</div></div>
+            <div class="board-item"><div><div class="board-item-name">La Salvaje</div><span class="board-item-desc">Carne pulled pork y mayonesa</span></div><div class="board-item-leader"></div><div class="board-item-price">2,70€</div></div>
+          </div>
+
+          <div class="board-panel" id="b-postres">
+            <div class="board-item"><div><div class="board-item-name">Tarta Lotus</div><span class="board-item-desc">Cremosa y con intenso sabor a galleta</span></div><div class="board-item-leader"></div><div class="board-item-price">3,50€</div></div>
+            <div class="board-item"><div><div class="board-item-name">Tarta de Queso</div><span class="board-item-desc">Suave y equilibrada</span></div><div class="board-item-leader"></div><div class="board-item-price">3,50€</div></div>
+            <div class="board-item"><div><div class="board-item-name">Tarta Oreo</div><span class="board-item-desc">Chocolate y galleta, combinación irresistible</span></div><div class="board-item-leader"></div><div class="board-item-price">3,50€</div></div>
+            <div class="board-item"><div><div class="board-item-name">Tarta de Chocolate</div><span class="board-item-desc">Para los más golosos</span></div><div class="board-item-leader"></div><div class="board-item-price">3,50€</div></div>
+          </div>
+
+          <div class="board-note">
+            <span>Caña o refresco + tapa <strong>3,50€</strong></span>
+            <span>Postre + café <strong>4,50€</strong></span>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ============ LA CARTA ============ -->
-<section id="carta" style="background:var(--cream-soft)">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">La carta</span>
-      <h2>Para picar, compartir y repetir</h2>
-      <p>Una selección con lo mejor de la casa. Precios orientativos — pregunta en barra por la pizarra del día.</p>
-    </div>
-
-    <div class="menu-tabs reveal">
-      <button class="menu-tab active" data-target="tab-tapas">Tapas Clásicas</button>
-      <button class="menu-tab" data-target="tab-montaditos">Montaditos</button>
-      <button class="menu-tab" data-target="tab-platos">Platos</button>
-      <button class="menu-tab" data-target="tab-tostas">Tostas</button>
-      <button class="menu-tab" data-target="tab-burguers">Mini Burguers</button>
-      <button class="menu-tab" data-target="tab-postres">Postres</button>
-    </div>
-
-    <div class="menu-panel active reveal" id="tab-tapas">
-      <div class="menu-grid">
-        <div class="menu-item"><div><div class="menu-item-name">Ensaladilla Rusa</div><div class="menu-item-desc">Patata, zanahoria, huevo, atún y mayonesa casera</div></div><div class="menu-item-price">2,00 €</div></div>
-        <div class="menu-item"><div><div class="menu-item-name">Patatas Bravas</div><div class="menu-item-desc">Dados de patata frita con salsa brava y alioli</div></div><div class="menu-item-price">2,50 €</div></div>
-        <div class="menu-item"><div><div class="menu-item-name">Magro con Tomate</div><div class="menu-item-desc">Carne de cerdo en tomate casero especiado</div></div><div class="menu-item-price">2,50 €</div></div>
-        <div class="menu-item"><div><div class="menu-item-name">Croquetas Caseras</div><div class="menu-item-desc">Crujientes por fuera y cremosas por dentro</div></div><div class="menu-item-price">2,50 €</div></div>
-        <div class="menu-item"><div><div class="menu-item-name">Pincho de Gambas</div><div class="menu-item-desc">Gamba fresca cocida</div></div><div class="menu-item-price">2,50 €</div></div>
-        <div class="menu-item"><div><div class="menu-item-name">Twister de Langostinos con Salsa Agridulce</div><div class="menu-item-desc">Crujiente de gamba con toque asiático</div></div><div class="menu-item-price">2,50 €</div></div>
-        <div class="menu-item"><div><div class="menu-item-name">Buñuelo Bacalao</div><div class="menu-item-desc">Bacalao fresco y jugoso con capa crujiente</div></div><div class="menu-item-price">2,50 €</div></div>
-      </div>
-    </div>
-
-    <div class="menu-panel" id="tab-montaditos">
-      <div class="menu-grid">
-        <div class="menu-item"><div><div class="menu-item-name">El Serranito</div><div class="menu-item-desc">Cerdo, jamón serrano, pimiento frito y mayonesa</div></div><div class="menu-item-price">2,70 €</div></div>
-        <div class="menu-item"><div><div class="menu-item-name">El Pulled Pork</div><div class="menu-item-desc">Pulled pork meloso con salsa suave</div></div><div class="menu-item-price">2,70 €</div></div>
-        <div class="menu-item"><div><div class="menu-item-name">El Secreto</div><div class="menu-item-desc">Secreto ibérico, con reducción Pedro Ximénez y sal escamada</div></div><div class="menu-item-price">2,70 €</div></div>
-        <div class="menu-item"><div><div class="menu-item-name">El Monte</div><div class="menu-item-desc">Lomo a la plancha, queso fundido y mayonesa</div></div><div class="menu-item-price">2,70 €</div></div>
-        <div class="menu-item"><div><div class="menu-item-name">El Sendero</div><div class="menu-item-desc">Pollo aliñado con salsa cheddar y mayonesa</div></div><div class="menu-item-price">2,70 €</div></div>
-      </div>
-    </div>
-
-    <div class="menu-panel" id="tab-platos">
-      <div class="menu-grid">
-        <div class="menu-item"><div><div class="menu-item-name">Flamenquín</div><div class="menu-item-desc">Relleno tradicional, dorado y crujiente</div></div><div class="menu-item-price">7,00 €</div></div>
-        <div class="menu-item"><div><div class="menu-item-name">Secreto a la Plancha</div><div class="menu-item-desc">Carne jugosa marcada al punto</div></div><div class="menu-item-price">7,00 €</div></div>
-      </div>
-    </div>
-
-    <div class="menu-panel" id="tab-tostas">
-      <div class="menu-grid">
-        <div class="menu-item"><div><div class="menu-item-name">Tosta El Monte</div><div class="menu-item-desc">Secreto, cebolla caramelizada y reducción de Pedro Ximénez</div></div><div class="menu-item-price">7,00 €</div></div>
-        <div class="menu-item"><div><div class="menu-item-name">Tosta Campera</div><div class="menu-item-desc">Lomo, pimiento, queso y alioli</div></div><div class="menu-item-price">6,00 €</div></div>
-      </div>
-    </div>
-
-    <div class="menu-panel" id="tab-burguers">
-      <div class="menu-grid">
-        <div class="menu-item"><div><div class="menu-item-name">La Ermita</div><div class="menu-item-desc">Carne, rúcula fresca y mayonesa de trufa</div></div><div class="menu-item-price">2,70 €</div></div>
-        <div class="menu-item"><div><div class="menu-item-name">The G.O.A.T.</div><div class="menu-item-desc">Carne, queso de cabra y cebolla caramelizada</div></div><div class="menu-item-price">2,70 €</div></div>
-        <div class="menu-item"><div><div class="menu-item-name">La Crujiente del Monte</div><div class="menu-item-desc">Pollo crispy, cheddar, lechuga y mayonesa</div></div><div class="menu-item-price">2,70 €</div></div>
-        <div class="menu-item"><div><div class="menu-item-name">El Monte</div><div class="menu-item-desc">Carne, bacon y cheddar con salsa burguer</div></div><div class="menu-item-price">2,70 €</div></div>
-        <div class="menu-item"><div><div class="menu-item-name">La Salvaje</div><div class="menu-item-desc">Carne pulled pork y mayonesa</div></div><div class="menu-item-price">2,70 €</div></div>
-      </div>
-    </div>
-
-    <div class="menu-panel" id="tab-postres">
-      <div class="menu-grid">
-        <div class="menu-item"><div><div class="menu-item-name">Tarta Lotus</div><div class="menu-item-desc">Cremosa y con intenso sabor a galleta</div></div><div class="menu-item-price">3,50 €</div></div>
-        <div class="menu-item"><div><div class="menu-item-name">Tarta de Queso</div><div class="menu-item-desc">Suave y equilibrada</div></div><div class="menu-item-price">3,50 €</div></div>
-        <div class="menu-item"><div><div class="menu-item-name">Tarta Oreo</div><div class="menu-item-desc">Chocolate y galleta en una combinación irresistible</div></div><div class="menu-item-price">3,50 €</div></div>
-        <div class="menu-item"><div><div class="menu-item-name">Tarta de Chocolate</div><div class="menu-item-desc">Para los más golosos</div></div><div class="menu-item-price">3,50 €</div></div>
-      </div>
-    </div>
-
-    <div class="menu-cta reveal">
-      <p style="color:var(--text-soft); font-size:15px; margin-bottom:18px;">Caña o refresco + tapa: <strong style="color:var(--amber)">3,50 €</strong> · Postre + café: <strong style="color:var(--amber)">4,50 €</strong></p>
-      <a href="#" class="btn btn-dark">Ver la carta completa</a>
+    <div class="pizarra-cta reveal">
+      <a href="#" class="btn btn-line">Ver la carta completa en PDF</a>
     </div>
   </div>
 </section>
@@ -235,20 +232,20 @@
     </div>
     <div class="spec-grid">
       <div class="spec-card reveal">
-        <div class="ph"><div class="ph-inner"><span class="ph-icon">📷</span><span class="ph-label">FOTO: El Secreto (montadito)</span></div></div>
-        <div class="spec-card-body"><h3>El Secreto</h3><p>Secreto ibérico con reducción de Pedro Ximénez y sal escamada.</p></div>
-      </div>
-      <div class="spec-card reveal">
-        <div class="ph"><div class="ph-inner"><span class="ph-icon">📷</span><span class="ph-label">FOTO: Croquetas caseras</span></div></div>
+        <div class="ph has-photo"><img src="img/croquetas-caseras.jpg" alt="Croquetas caseras de Tapería El Monte" loading="lazy"></div>
         <div class="spec-card-body"><h3>Croquetas Caseras</h3><p>Crujientes por fuera y cremosas por dentro.</p></div>
       </div>
       <div class="spec-card reveal">
-        <div class="ph"><div class="ph-inner"><span class="ph-icon">📷</span><span class="ph-label">FOTO: La Ermita (mini burguer)</span></div></div>
-        <div class="spec-card-body"><h3>La Ermita</h3><p>Carne, rúcula fresca y mayonesa de trufa.</p></div>
+        <div class="ph has-photo"><img src="img/pincho-gambas-plancha.jpg" alt="Pincho de gambas a la plancha" loading="lazy"></div>
+        <div class="spec-card-body"><h3>Pincho de Gambas</h3><p>Gamba fresca cocida a la plancha, jugosa y sencilla.</p></div>
       </div>
       <div class="spec-card reveal">
-        <div class="ph"><div class="ph-inner"><span class="ph-icon">📷</span><span class="ph-label">FOTO: Tosta El Monte</span></div></div>
-        <div class="spec-card-body"><h3>Tosta El Monte</h3><p>Secreto, cebolla caramelizada y reducción de Pedro Ximénez.</p></div>
+        <div class="ph has-photo"><img src="img/burger-the-goat.jpg" alt="Mini burguer The G.O.A.T. con queso de cabra" loading="lazy"></div>
+        <div class="spec-card-body"><h3>The G.O.A.T.</h3><p>Carne, queso de cabra y cebolla caramelizada.</p></div>
+      </div>
+      <div class="spec-card reveal">
+        <div class="ph has-photo"><img src="img/tosta-secreto-plancha.jpg" alt="Tosta de secreto ibérico a la plancha" loading="lazy"></div>
+        <div class="spec-card-body"><h3>Secreto a la Plancha</h3><p>Carne jugosa marcada al punto, sobre tosta.</p></div>
       </div>
     </div>
   </div>
@@ -263,11 +260,11 @@
       <p>Ven con amigos, con la familia o solo a tomar algo. En El Monte te sentirás como en casa desde el primer minuto.</p>
     </div>
     <div class="ambiente-gallery reveal">
-      <div class="ph g1"><div class="ph-inner"><span class="ph-icon">📷</span><span class="ph-label">FOTO: sala principal / comedor</span></div></div>
-      <div class="ph"><div class="ph-inner"><span class="ph-icon">📷</span><span class="ph-label">FOTO: barra</span></div></div>
-      <div class="ph"><div class="ph-inner"><span class="ph-icon">📷</span><span class="ph-label">FOTO: terraza o mesas</span></div></div>
-      <div class="ph"><div class="ph-inner"><span class="ph-icon">📷</span><span class="ph-label">FOTO: detalle / grupo de amigos tapeando</span></div></div>
-      <div class="ph"><div class="ph-inner"><span class="ph-icon">📷</span><span class="ph-label">FOTO: rincón acogedor</span></div></div>
+      <div class="ph has-photo g1"><img src="img/bunuelos-bacalao-barra.jpg" alt="Buñuelos de bacalao en la barra de Tapería El Monte" loading="lazy"></div>
+      <div class="ph has-photo"><img src="img/montadito-el-monte.jpg" alt="Montadito de Tapería El Monte" loading="lazy"></div>
+      <div class="ph has-photo"><img src="img/bocadillo-pulled-pork.jpg" alt="Bocadillo de pulled pork" loading="lazy"></div>
+      <div class="ph has-photo"><img src="img/twister-langostinos.jpg" alt="Twister de langostinos de Tapería El Monte" loading="lazy"></div>
+      <div class="ph"><div class="ph-inner"><span class="ph-icon">📷</span><span class="ph-label">FOTO PENDIENTE: rincón acogedor del interior</span></div></div>
     </div>
   </div>
 </section>

@@ -2,31 +2,27 @@
 (function () {
   "use strict";
 
-  var header = document.querySelector(".site-header");
+  var topbar = document.querySelector(".topbar");
   var onScroll = function () {
-    if (window.scrollY > 30) header.classList.add("scrolled");
-    else header.classList.remove("scrolled");
+    if (window.scrollY > 30) topbar.classList.add("scrolled");
+    else topbar.classList.remove("scrolled");
   };
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
 
-  // Menú móvil
-  var navToggle = document.querySelector(".nav-toggle");
-  var mobileMenu = document.querySelector(".mobile-menu");
-  if (navToggle && mobileMenu) {
-    navToggle.addEventListener("click", function () {
-      document.body.classList.toggle("menu-open");
-    });
-    mobileMenu.querySelectorAll("a").forEach(function (a) {
-      a.addEventListener("click", function () {
-        document.body.classList.remove("menu-open");
-      });
-    });
-  }
+  // Nav overlay a pantalla completa
+  var menuBtn = document.querySelector(".menu-btn");
+  var navClose = document.querySelector(".nav-close");
+  var navLinks = document.querySelectorAll(".nav-overlay-links a");
+  if (menuBtn) menuBtn.addEventListener("click", function () { document.body.classList.add("nav-open"); });
+  if (navClose) navClose.addEventListener("click", function () { document.body.classList.remove("nav-open"); });
+  navLinks.forEach(function (a) {
+    a.addEventListener("click", function () { document.body.classList.remove("nav-open"); });
+  });
 
-  // Pestañas de la carta
-  var tabs = document.querySelectorAll(".menu-tab");
-  var panels = document.querySelectorAll(".menu-panel");
+  // Pestañas de la pizarra (carta)
+  var tabs = document.querySelectorAll(".board-tab");
+  var panels = document.querySelectorAll(".board-panel");
   tabs.forEach(function (tab) {
     tab.addEventListener("click", function () {
       var target = tab.getAttribute("data-target");
