@@ -126,7 +126,7 @@ section { position: relative; padding: 100px 0; }
 /* ============ TOPBAR ============ */
 .topbar {
   position: fixed; top: 0; left: 0; right: 0; z-index: 600;
-  padding: 30px 0;
+  padding: 22px 0;
   transition: background .35s ease, padding .35s ease, box-shadow .35s ease;
 }
 .topbar::before {
@@ -135,28 +135,29 @@ section { position: relative; padding: 100px 0; }
   background: linear-gradient(180deg, rgba(15,9,4,.55) 0%, rgba(15,9,4,0) 100%);
   opacity: 1; transition: opacity .35s ease;
 }
-.topbar.scrolled { background: rgba(20,11,4,.94); backdrop-filter: blur(10px); padding: 16px 0; box-shadow: 0 4px 30px rgba(0,0,0,.5); border-bottom: 1px solid rgba(221,163,92,.15); }
+.topbar.scrolled { background: rgba(20,11,4,.94); backdrop-filter: blur(10px); padding: 14px 0; box-shadow: 0 4px 30px rgba(0,0,0,.5); border-bottom: 1px solid rgba(221,163,92,.15); }
 .topbar.scrolled::before { opacity: 0; }
 .topbar-row { display: flex; align-items: center; justify-content: space-between; }
-.topbar-brand { display: flex; align-items: center; gap: 15px; }
+.topbar-brand { display: flex; align-items: center; gap: 13px; }
 .stamp {
-  width: 60px; height: 60px; border-radius: 50%;
+  width: 48px; height: 48px; border-radius: 50%;
   border: 1.5px solid var(--amber);
   display: flex; align-items: center; justify-content: center;
   color: var(--amber);
   flex-shrink: 0;
-  box-shadow: 0 0 0 4px rgba(221,163,92,.1), 0 4px 18px -4px rgba(221,163,92,.4);
+  box-shadow: 0 0 0 3px rgba(221,163,92,.1), 0 4px 16px -4px rgba(221,163,92,.4);
   transition: transform .35s ease, box-shadow .35s ease;
 }
-.topbar-brand:hover .stamp { transform: rotate(-6deg) scale(1.06); box-shadow: 0 0 0 6px rgba(221,163,92,.16), 0 6px 22px -4px rgba(221,163,92,.55); }
-.stamp svg { width: 32px; height: 32px; }
-.topbar-word { font-family: var(--ff-serif); letter-spacing: .04em; font-size: 28px; font-weight: 600; color: var(--text); }
+.topbar-brand:hover .stamp { transform: rotate(-6deg) scale(1.06); box-shadow: 0 0 0 5px rgba(221,163,92,.16), 0 6px 20px -4px rgba(221,163,92,.55); }
+.stamp svg { width: 26px; height: 26px; }
+.topbar-word { font-family: var(--ff-serif); letter-spacing: .04em; font-size: 22px; font-weight: 600; color: var(--text); white-space: nowrap; }
 
-.nav-links { display: flex; gap: 34px; align-items: center; }
+.nav-links { display: flex; gap: 26px; align-items: center; flex-wrap: nowrap; }
 .nav-links a {
   font-family: var(--ff-sans);
-  font-weight: 700; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--text);
-  position: relative; padding: 9px 2px;
+  font-weight: 700; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--text);
+  position: relative; padding: 8px 1px;
+  white-space: nowrap; flex-shrink: 0;
   transition: color .25s ease;
 }
 .nav-links a::after {
@@ -168,19 +169,21 @@ section { position: relative; padding: 100px 0; }
 .nav-links a:hover { color: var(--amber-light); }
 .nav-links a:hover::after { width: 100%; }
 
-.topbar-actions { display: flex; align-items: center; gap: 26px; }
+.topbar-actions { display: flex; align-items: center; gap: 20px; flex-wrap: nowrap; }
 .topbar-actions::before {
   content: "";
-  width: 1px; height: 28px;
+  width: 1px; height: 24px;
   background: var(--line);
   margin-right: 2px;
+  flex-shrink: 0;
 }
-.topbar-actions .phone-mini { font-family: var(--ff-mono); font-size: 16px; font-weight: 700; color: var(--text-soft); letter-spacing: .01em; transition: color .25s ease; }
+.topbar-actions .phone-mini { font-family: var(--ff-mono); font-size: 14.5px; font-weight: 700; color: var(--text-soft); letter-spacing: .01em; white-space: nowrap; transition: color .25s ease; }
 .topbar-actions .phone-mini:hover { color: var(--amber-light); }
 .topbar-actions .btn-gold {
-  padding: 16px 34px; font-size: 15.5px; letter-spacing: .02em;
-  box-shadow: 0 12px 30px -10px rgba(221,163,92,.7);
-  display: inline-flex; align-items: center; gap: 9px;
+  padding: 13px 26px; font-size: 14px; letter-spacing: .02em;
+  white-space: nowrap;
+  box-shadow: 0 10px 24px -10px rgba(221,163,92,.7);
+  display: inline-flex; align-items: center; gap: 8px;
 }
 .topbar-actions .btn-gold::after { content: "→"; font-size: 15px; transition: transform .25s ease; }
 .topbar-actions .btn-gold:hover::after { transform: translateX(3px); }
