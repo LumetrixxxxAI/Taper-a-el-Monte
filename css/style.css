@@ -273,8 +273,8 @@ body.nav-open .nav-overlay { opacity: 1; visibility: visible; transform: transla
 }
 .casa-text { position: relative; z-index: 1; }
 .casa-text p:first-of-type::first-letter {
-  font-family: var(--ff-serif); font-size: 62px; float: left;
-  line-height: .8; padding: 6px 10px 0 0; color: var(--amber);
+  font-family: var(--ff-serif); font-size: 26px; float: left;
+  line-height: 1; padding: 2px 4px 0 0; color: var(--amber);
 }
 .casa-media { position: relative; z-index: 1; }
 .casa-media .ph { aspect-ratio: 5/4; border-radius: var(--radius); }
